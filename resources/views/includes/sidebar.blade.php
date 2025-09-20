@@ -45,6 +45,24 @@
                         </ul>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarApiData" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApiData">
+                        <i class="ri-layout-grid-line"></i> <span>Api Data</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarApiData">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ route('categories.index') }}" class="nav-link">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('sub_categories.index') }}" class="nav-link">Sub Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('products.index') }}" class="nav-link">Products</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
             </ul>
         </div>

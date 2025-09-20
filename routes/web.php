@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
 // lockscreen
 Route::get('/', function () {
     return view('lockscreen');
@@ -60,3 +61,17 @@ Route::get('/ajax/categories', [VehicleCategoryController::class, 'ajaxCategorie
 // Towns for dropdown (AJAX)
 Route::get('/ajax/towns', [LocationController::class, 'ajaxTowns'])
     ->name('ajax.towns')->middleware('auth');
+
+Route::get('/categories', function () {
+    return view('categories.index');
+})->name('categories.index');
+
+// Sub-Category Page
+Route::get('/sub_categories', function () {
+    return view('sub_categories.index');
+})->name('sub_categories.index');
+
+// Product Page
+Route::get('/products', function () {
+    return view('products.index');
+})->name('products.index');
